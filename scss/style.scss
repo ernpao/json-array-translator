@@ -47,6 +47,10 @@ body{
     .mdl-textfield{
         position: relative;
         padding-top: 0px;
+        width: 100%;
+        textarea{
+            height: 50vh!important;
+        }
         &::after{
             position: absolute;
             top: 0;
