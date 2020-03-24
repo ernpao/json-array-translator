@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Item 1 Title",
+        "description": "This is a sample description",
+        "txt": "This is some sample text"
+    },
+    {
+        "title": "Item 2 Title",
+        "description": "There were white out conditions in the town; subsequently, the roads were impassable.",
+        "txt": "She wore green lipstick like a fashion icon."
+    },
+    {
+        "title": "Item 3 Title",
+        "description": "It must be five o'clock somewhere.",
+        "txt": "I think I will buy the red car, or I will lease the blue one."
+    },
+    {
+        "title": "Item 4 Title",
+        "description": "All they could see was the blue water surrounding their sailboat.",
+        "txt": "A glittering gem is not enough."
+    },
+    {
+        "title": "Item 5 Title",
+        "description": "Joe made the sugar cookies; Susan decorated them.",
+        "txt": "I caught my squirrel rustling through my gym bag."
+    }
+]
