@@ -1,5 +1,3 @@
-[{ "title": "test", "description": "This is a sample description" }, { "title": "test" }]
-
 let data =
     [{
         "id": 249,
