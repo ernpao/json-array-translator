@@ -104,7 +104,8 @@ async function translateJsonArray(jsonArray) {
             if (count == total) {
                 hidePreloader();
                 console.log(resultArray)
-                const resultString = JSON.stringify(resultArray)
+                const compressOutput = $("#compress-output").is(":checked")
+                const resultString = (compressOutput) ? JSON.stringify(resultArray) : JSON.stringify(resultArray, null, 4)
                 $("#input").val("")
                 $("#output").val(resultString)
             }
