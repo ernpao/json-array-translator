@@ -8,7 +8,7 @@ Simple web app for translating the text content of a JSON array using the [Yande
 
 ## Demo
 
-<video src="json_array_translator_demo.mov"></video>
+![json_array_translator_demo](json_array_translator_demo.gif)
 
 ## API Key
 You can use your own API key for the app. You can get a free API key by signing up at the [Yandex website](https://tech.yandex.com/translate/). You can update the API key located at the top of the js/script.js file.
