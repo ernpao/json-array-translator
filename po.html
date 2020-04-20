@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/mainsite/img/favicon.ico">
+    <title>PO File Translator</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="content">
+            <div class="preloader-content">Loading...</div>
+            <div class="spinner">
+                <div class="mdl-spinner mdl-js-spinner is-active"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="title">PO File Translator</h3>
+                <!-- <span>Yandex Languages: <a></a></span> -->
+                <div>
+                    <h3>
+                        <p class="instruction"><a href="https://jsonformatter.curiousconcept.com/" target="_blank">Format your JSON
+                                array</a>
+                            first
+                            before using this translator tool!</p>
+                    </h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" id="language-select-container">
+                            <p class="instruction">Set the target language of the translation:</p>
+                            <select id="language-select">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="instruction"><i>Paste the JSON array here...</i></p>
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <textarea class="mdl-textfield__input" type="text" rows="3" id="input"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <p><i>Translated JSON array will be placed here</i></p>
+                <form action="#">
+                    <div class="mdl-textfield mdl-js-textfield">
+                        <textarea class="mdl-textfield__input" type="text" rows="3" id="output"></textarea>
+                        <!-- <label class="mdl-textfield__label" for="sample5">Translated JSON array will be placed
+                            here</label> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Colored raised button -->
+                <button style="margin: auto; display: inline-block;" id="translate-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                    Translate
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="error-dialog" class="mdl-dialog">
+        <h4 id="error-message-title" class="mdl-dialog__title"></h4>
+        <div class="mdl-dialog__content">
+            <span id="error-message"></span>
+
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button close">Close</button>
+        </div>
+    </dialog>
+</body>
+<script type="text/javascript" src="js/po.js"></script>
+
+</html>
