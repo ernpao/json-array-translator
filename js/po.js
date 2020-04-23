@@ -1,4 +1,3 @@
-const apiKey = 'AIzaSyB7nZ-V4OQ3T0pgnhW6DkG_YlB0eGUjZe8'
 const format = 'html'
 
 
